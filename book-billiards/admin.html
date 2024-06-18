@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Quản lý quán</title>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="./asset\css/home.css">
+		<link rel="stylesheet" href="./asset/css/base.css">
+		<link rel="stylesheet" href="./asset/css/room.css">
+		<link rel="stylesheet" href="./asset/css/admin.css">
+		<link rel="stylesheet" href="./asset/css/history.css">
+		<link rel="stylesheet" href="./asset/css/responsive.css">
+	</head>
+
+	<body>
+		<div class="app">
+			<div class="header--home">
+				<div class="header__logo-section">
+					<i class="fa-solid fa-house-laptop header__logo--home"></i>
+					<span class="header__name--home">Thống kê và báo cáo</span>
+				</div>
+				<div class="user">
+					<div class="user__role">
+						<!-- <i class="fa-solid fa-users"></i> -->
+						<!-- <span>người dùng cơ bản</span> -->
+						<i class="fa-solid fa-users-gear"></i>
+						<span>Quản trị viên</span>
+					</div>
+					<div class="user__avatar">
+						<img src="user-avatar-img.png" alt="avatar">
+						<i class="fa-solid fa-angle-down"></i>
+						<ul class="user__avatar__option">
+							<li><a href="login.html">Đăng xuất</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="contain">
+				<ul class="sidebar">
+					<li class="user">
+						<div class="user__avatar">
+							<img src="avt.jpg" alt="avatar">
+						</div>
+						<div class="user__info">
+							<span>Minh Lê</span>
+							<div class="user__role--sidebar">
+								<!-- <i class="fa-solid fa-users"></i> -->
+								<!-- <span>người dùng cơ bản</span> -->
+								<i class="fa-solid fa-users-gear"></i>
+								<span>quản trị viên</span>
+							</div>
+						</div>
+					</li>
+					<li class="sidebar__item">
+						<a href="#" class="sidebar__link sidebar__link--selected">
+							<i class="fa-solid fa-table-list"></i>
+							<span class="">Thống kê & báo cáo</span>
+						</a>
+					</li>
+				</ul>
+
+				<div class="content--home">
+					<div class="content__header">
+						<p class="content__header__note">
+							LỊCH SỬ THUÊ BÀN:
+						</p>
+						<div class="content-color-box">
+							<a href="" class="btn add-btn">
+								<i class="fa-solid fa-file-export"></i>
+								Xuất excel
+						</a>
+						</div>
+					</div>
+
+					<div class="content__soft">
+						<form class="contetn__soft__option">
+							<span>Lọc theo năm:</span>
+							<select name="" id="">
+								<option value="">2021-2022</option>
+								<option value="">2022-2023</option>
+								<option value="">2023-2024</option>
+							</select>
+							<button type="submit">Lọc</button>
+						</form>
+
+						<form class="contetn__soft__option">
+							<span>Lọc theo tầng:</span>
+							<select name="" id="">
+								<option value="">Tầng 1</option>
+								<option value="">Tầng 2</option>
+								<option value="">Tầng 2</option>
+							</select>
+							<button type="submit">Lọc</button>
+						</form>
+
+						<form class="contetn__soft__option">
+							<span>Lọc theo người quản lý:</span>
+							<select name="" id="">
+								<option value="">Minh Lê</option>
+								<option value="">Hùng Đỗ</option>
+								<option value="">Minh Ngô</option>
+							</select>
+							<button type="submit">Lọc</button>
+						</form>
+
+						<form class="contetn__soft__option contetn__soft__option--date">
+							<span>Lọc từ ngày:</span>
+							<input type="date" placeholder="">
+							đến:<input type="date" placeholder="">
+							<button type="submit">Lọc</button>
+						</form>
+					</div>
+
+					<div class="content__device--admin">
+						<table class="device__table--admin">
+							<thead>
+								<tr>
+									<th>Người quản lý </th>
+									<th>Số tầng</th>
+									<th>Số bàn</th>
+									<th>Trạng thái</th>
+									<th>Thời gian thuê bàn</th>
+									<th>Thời gian trả bàn</th>
+									<th>Thanh toán</th>
+									<br>
+								</tr>
+							</thead>
+							<thead>
+								
+							</thead>
+
+							<tbody>
+								<tr>
+									<td>Minh Lê</td>
+									<td>Tầng 01</td>
+									<td>Bàn 02</td>
+									<td>Đang thuê</td>
+									<td>07:02 - 02/06/2024</td>
+									<td>Chưa trả bàn</td>
+									<td>Chưa trả bàn</td>
+								</tr>
+								<tr>
+									<td>Minh Lê</td>
+									<td>Tầng 01</td>
+									<td>Bàn 01</td>
+									<td>Đã xong</td>
+									<td>06:15 - 01/06/2024</td>
+									<td>08:15 - 01/06/2024</td>
+									<td>Đã thanh toán</td>
+								</tr>
+								<tr>
+									<td>Minh Lê</td>
+									<td>Tầng 01</td>
+									<td>Bàn 03</td>
+									<td>Đã xong</td>
+									<td>05:15 - 01/06/2024</td>
+									<td>09:15 - 01/06/2024</td>
+									<td>Đã thanh toán</td>
+									
+								</tr>
+								<td>Hùng Đỗ</td>
+									<td>Tầng 01</td>
+									<td>Bàn 01</td>
+									<td>Đã xong</td>
+									<td>05:15 - 30/06/2024</td>
+									<td>09:15 - 30/06/2024</td>
+									<td>Đã thanh toán</td>
+							</tbody>
+
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	
+</html>

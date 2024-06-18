@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Band</title>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+        <link rel="stylesheet" href="./asset/css/style.css">
+        <link rel="stylesheet" href="./asset/css/responsive.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            /* Style cho popup */
+            #emailPopup {
+            position: fixed;
+            width: 300px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 1px solid #ccc;
+            background-color: #ecf5e6;
+            padding: 20px;
+            z-index: 1000;
+            
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <!-- heading -->
+        <div id="heading">
+            <!-- nav -->
+            <div id="nav-section">
+                <ul class="nav">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="#band">Billiard</a></li>
+                    <li><a href="#tour">Sự kiện</a></li>
+                    <li><a href="#contact">Liên hệ</a></li>
+                    <li class="more-hover"><a href="book(player).html" >Đặt bàn</a></li>
+                        </ul>
+                    </a></li>
+                </ul>
+            </div>
+            <!-- nav -->
+            <!-- search -->
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div id="mobile-menu" class="menu-box">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div id="slider">
+            <div class="slider-text">
+                <h3 class="slider-head">Billiard</h3>
+                <div class="slider-description">Nơi thoả mãn đam mê.</div>
+            </div>
+        </div>
+        <div id="content">
+            <!-- about-team -->
+            <div class="about" id="band">
+                <div class="center-box">
+                    <h2 class="text-head">Billiard</h2>
+                    <p class="text-description">Billiard là gì nhỉ?</p>
+                    <p class="team-para">Billiard còn có tên gọi khác là bida hoặc là bi a. Đây là một trò chơi với nhiều bi màu sắc khác nhau cùng với cây gậy trên một mặt bàn phẳng. Mỗi người chơi sẽ sư dụng một bi cái với màu sắc khác nhau nhằm ghi điểm nhiều hơn cũng như giành được chiến thắng ở trong trận đấu. Người chơi không cần phải sắm bất kể một dụng cụ nào cả, phụ kiện nào cũng có thể tập luyện và chơi bộ môn này ở các quán bi a thường xuyên mà mức giá cũng không quá cao.</p>
+                    <div class="row">
+                        <div class="col col-third">
+                            <img src="https://th.bing.com/th/id/OIP.PP9Ee4lN59gQ2w9ifQoIuwHaE6?w=1600&h=1062&rs=1&pid=ImgDetMain" alt="Name" class="member-picture">
+                        </div>
+                        <div class="col col-third">
+                            <img src="https://th.bing.com/th/id/OIP.iDx8w7QSymponRDfwjFgCAAAAA?rs=1&pid=ImgDetMain" alt="Name" class="member-picture">
+                        </div>
+                        <div class="col col-third">
+                            <img src="https://2sao.vietnamnetjsc.vn/images/2021/08/12/14/04/gam-kami-04.png" alt="Name" class="member-picture">
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <!-- tour dates -->
+            <div class="tour-dates" id="tour">
+                <div class="center-box">
+                    <h2 class="text-head">Sự kiện</h2>
+                    <p class="text-description">Các sự kiện dành cho nggười chơi</p>
+                    <ul class="location-section">
+                        <li>Tháng 5<span class="sold">Đã kết thúc</span></li>
+                        <li>Tháng 6<span class="sold">Đã kết thúc</span></li>
+                        <li>Tháng 7<span class="ticket-left"> 3 sự kiện</span></li>
+                    </ul>
+                    <div class="row">
+                        <div class="col col-third">
+                            <img src="https://scontent.fhan5-8.fna.fbcdn.net/v/t39.30808-6/367686744_760083779456230_4509581286098019948_n.jpg?stp=cp6_dst-jpg_s600x600&_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFsbEy87i0nkgwEQMpaKr1snz6QikNtnpyfPpCKQ22enLmqdmuGXiAxlXt9alyIRlZtfbKCLr4FChR4npRD508c&_nc_ohc=P89FjJjKsdsQ7kNvgG2GhVJ&_nc_ht=scontent.fhan5-8.fna&oh=00_AYDADfmlxkUsUhVGHI08e6LnzVYXWmJZe1LqBreJmecwHQ&oe=6672AFFB" alt="New York" class="place-picture">
+                            <div class="place-info">
+                                <p class="place-name"> AZCOM CUP</p>
+                                <p class="place-dates">01/06/2024</p>
+                                <p class="place-description">Azcom Billiards Club tổ chức giải Pool 9 Ball, sinh viên và các cơ thủ hạng 🐣 F G H  vào ngày Chủ Nhật  13/08/2023. *Cơ cấu giải thưởng:
+                                    🥇 Giải Nhất : 5.000.000 + 🏆 + Cờ lưu niệm
+                                    🥈 Giải Nhì:    2.500.000 + cờ
+                                    🥉  Đồng giải 3 :  1.000.000 + cờ</p>
+                                <a class="buy-buttom" onclick="openPopup()">Tham gia</a>
+                                    
+                                <div id="emailPopup" style="display:none;">
+                                    Nhập email để nhận thông báo:
+                                <form id="emailForm">
+                                    <label for="email">Email:</label>
+                                    <input type="email" id="email" name="email" required>
+                                    <input type="submit" value="Gửi">
+                                </form>
+                                <script>
+                                    function openPopup() {
+                                    document.getElementById('emailPopup').style.display = 'block';
+                                    }
+
+                                    document.getElementById('emailForm').addEventListener('submit', function(event) {
+                                    event.preventDefault();
+                                    document.getElementById('emailPopup').style.display = 'none';
+                                    });
+
+                                </script>
+                                </div>
+
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="col col-third">
+                            <img src="screenshot_1718415488.png " alt="Paris" class="place-picture">
+                            <div class="place-info">
+                                <p class="place-name">WARRIORS BILLIARDS</p>
+                                <p class="place-dates">15/06/2024</p>
+                                <p class="place-description">Giải 9 bi hạng G H I (I dành cho nữ). 
+                                    💰 CƠ CẤU GIẢI THƯỞNG: <br>
+                                    🥇 Giải nhất : 4.700.000 tiền mặt + cờ cúp
+                                    🥈 Giải nhì :2.300.000 + cờ cúp
+                                    🥉 Giải ba : 1.500.000 ( Đồng giải ba ) + cờ cup</p>
+                                    <a class="buy-buttom" onclick="openPopup()">Tham gia</a>
+                                    
+                                    <div id="emailPopup" style="display:none;">
+                                        Nhập email để nhận thông báo:
+                                        <form id="emailForm">
+                                            <label for="email">Email:</label>
+                                            <input type="email" id="email" name="email" required>
+                                            <input type="submit" value="Gửi">
+                                        </form>
+                                        
+                                        <script>
+                                            document.getElementById('emailForm').addEventListener('submit', function(event) {
+                                                event.preventDefault();
+                                                alert("Cảm ơn bạn đã đăng kí tham gia sự kiện, chúng tôi sẽ liên hệ với bạn!!");
+                                            });
+                                        </script>
+                                        
+                                    </div>  
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="col col-third">
+                            <img src="https://th.bing.com/th/id/OIP.1aZEkSQfQL-MIy-7mEYhBQAAAA?w=309&h=406&rs=1&pid=ImgDetMain" alt="San Francisco" class="place-picture">
+                            <div class="place-info">
+                                <p class="place-name">Billiard World Cup</p>
+                                <p class="place-dates">30/06/2024</p>
+                                <p class="place-description">Giải bi a 9 ball dành cho giới trẻ ( HSSV, 9x trở lên) hạng chuẩn, 💰 CƠ CẤU GIẢI THƯỞNG: <br>
+                                    🥇 Giải nhất : 4.700.000 tiền mặt + cờ cúp <br>
+                                    🥈 Giải nhì :2.300.000 + cờ cúp <br>
+                                    🥉 Giải ba : 1.500.000 ( Đồng giải ba ) + cờ cup</p>
+                                    <a class="buy-buttom" onclick="openPopup()">Tham gia</a>
+                                    
+                                    <div id="emailPopup" style="display:none;">
+                                        Nhập email để nhận thông báo:
+                                        <form id="emailForm">
+                                            <label for="email">Email:</label>
+                                            <input type="email" id="email" name="email" required>
+                                            <input type="submit" value="Gửi">
+                                        </form>
+                                        
+                                        <script>
+                                            document.getElementById('emailForm').addEventListener('submit', function(event) {
+                                                event.preventDefault();
+                                                alert("Cảm ơn bạn đã đăng kí tham gia sự kiện, chúng tôi sẽ liên hệ với bạn!!");
+                                            });
+                                        </script>
+                                        
+                                    </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- contact -->
+            <div class="contact" id="contact">
+                <div class="center-box">
+                    <h2 class="text-head">Liên hệ</h2>
+                    <p class="text-description">Liên lạc với chúng tôi </p>
+                    <div class="contact-section">
+                        <div class="row">
+                            <div class="col col-half">
+                                <ul class="contact-info">
+                                    <li><i class="fa-solid fa-location-dot"></i> <span class="contact-span"></span>HaNoi</li>
+                                    <li><i class="fa-solid fa-phone"></i> <span class="contact-span">Phone: 012345678</span></li>
+                                    <li><i class="fa-solid fa-envelope"></i> <span class="contact-span">Email: mail@mail.com</span></li>
+                                </ul>
+                            </div>
+                            <div class="col col-half">
+                                <div class="form-section">
+                                    <form action="" class="form">
+                                        <div class="row row1">
+                                            <div class="col col-half col1">
+                                                <input type="text" required placeholder="Name" class="form-name">
+                                                <div class="clear"></div>
+                                            </div>
+                                            <div class="col col-half col2">
+                                                <input type="text" required placeholder="Email" class="form-email">
+                                                <div class="clear"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row row2">
+                                            <div class="col col-full">
+                                                <input type="text" required placeholder="Message" class="form-message">
+                                                <div class="clear"></div>
+                                            </div> 
+                                        </div>
+                                        <input type="submit" value="Gửi" class="send-buttom">
+                                        <div class="clear"></div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div> 
+            </div>
+            <a href="https://maps.app.goo.gl/1xowT5vB5e7WWfzU8" target="_blank">
+                <img src="screenshot_1718418403.png" alt="Bản đồ" class="map">
+              </a>
+              
+        </div>
+        <!-- footer -->
+        <div id="footer">
+            <div class="center-box">
+                <div class="social-icon">
+                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#"></a><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"></a><i class="fa-brands fa-square-snapchat"></i></a>
+                    <a href="#"></a><i class="fa-brands fa-github"></i></a>
+                    <a href="#"></a><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"></a><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- javascript -->
+        <script>
+            var header = document.getElementById('heading');
+            var mobileMenu = document.getElementById('mobile-menu');
+            var headerHeight = header.clientHeight;
+
+            mobileMenu.onclick = function() {
+                var isClose = header.clientHeight === headerHeight;
+                if (isClose) {
+                    header.style.height= 'auto';
+                }else{
+                    header.style.height= null;
+                }
+            }
+
+            var menuItems = document.querySelectorAll('#nav-section .nav > li a');
+            for(var i=0; i<menuItems.length; i++){
+                var menuItem = menuItems[i];
+
+                menuItem.onclick = function(){
+                    header.style.height= null;
+                }
+            }
+        </script>
+    </body>
+</html>
