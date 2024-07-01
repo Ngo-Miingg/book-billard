@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(nen.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .register-container {
+            width: 400px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px #000;
+        }
+        .register-container h1 {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="register-container">
+        <h1>Đăng Ký</h1>
+        <form id="signupForm">
+            <div class="form-group">
+                <label for="username"><b>Tên đăng nhập</b></label>
+                <input type="text" class="form-control" placeholder="Nhập tên muốn đăng ký" name="uname" id="username" required>
+            </div>
+            <div class="form-group">
+                <label for="email"><b>Email</b></label>
+                <input type="email" class="form-control" placeholder="Nhập email" name="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password"><b>Mật khẩu</b></label>
+                <input type="password" class="form-control" placeholder="Nhập mật khẩu" name="psw" id="password" required>
+            </div>
+            <button type="submit" class="btn btn-success btn-block">Đăng kí</button>
+        </form>
+        <br>
+        <p class="text-center">Nếu đã có tài khoản hãy <a href="login.html">Đăng Nhập</a></p>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        const signupForm = document.getElementById('signupForm');
+
+        signupForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            const username = document.getElementById('username').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            // Xử lý logic đăng ký tài khoản tại đây
+            // Ví dụ: lưu thông tin đăng ký vào localStorage hoặc gửi đến server
+            console.log(`Đăng ký thành công: ${username}, ${email}, ${password}`);
+
+            // Hiển thị thông báo thành công hoặc thất bại
+            alert('Đăng ký thành công!');
+            window.location.href = 'login.html'; // Redirect to login page
+        });
+    </script>
+</body>
+</html>
